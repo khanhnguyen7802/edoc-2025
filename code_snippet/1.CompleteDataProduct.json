@@ -1,0 +1,117 @@
+{
+  "dataProduct": {
+    "dataProductId": "10.17616/R3MW57",
+    "pidType": "doi",
+    "urlNamespace": "https://doi.org",
+    "name": "fishBase",
+    "description": "A database of over 30,000 species of searchable fish",
+    "version": "4.0.0"
+  },
+  "domainDataset": {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "datasets",
+    "numberOfItems": 5,
+    "itemListElement": [
+      {
+        "@type": "Dataset",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.25504/FAIRsharing.db020e"
+        },
+        "name": "marineMetadataInteroperabilityOntologyRegistryAndRepository",
+        "description": "A web application through which you can create, update, access, and map ontologies and their terms",
+        "version": "1.2.0",
+        "url": "https://doi.org/10.25504/FAIRsharing.db020e",
+        "includedInDataCatalog": {
+          "@type": "DataCatalog",
+          "name": "Registry of Research Data Repositories",
+          "url": "https://www.re3data.org/"
+        },
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "@type": "Dataset",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.17616/R35N31"
+        },
+        "name": "fishNet2",
+        "description": "A collaborative effort among fish collections around the world to share and distribute data on specimen holdings",
+        "version": "2.1.0",
+        "url": "https://doi.org/10.17616/R35N31",
+        "includedInDataCatalog": {
+          "@type": "DataCatalog",
+          "name": "Registry of Research Data Repositories",
+          "url": "https://www.re3data.org/"
+        },
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "@type": "Dataset",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.15468/oynwkx"
+        },
+        "name": "coastalAndMarineSpeciesDatabase",
+        "description": "The records are general marine and coastal records of different taxonomic groups",
+        "url": "https://doi.org/10.15468/oynwkx",
+        "includedInDataCatalog": {
+          "@type": "DataCatalog",
+          "name": "Dataset Search",
+          "url": "https://datasetsearch.research.google.com/"
+        }
+      },
+      {
+        "@type": "Dataset",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.25504/FAIRsharing.2be14a"
+        },
+        "name": "archiveForMarineSpeciesAndHabitatsData",
+        "description": "UK Data Archive Centre for marine biodiversity data for both species and habitats",
+        "version": "2.3.0",
+        "url": "https://doi.org/10.25504/FAIRsharing.2be14a",
+        "sameAs": "https://www.re3data.org/repository/r3d100013351",
+        "includedInDataCatalog": {
+          "@type": "DataCatalog",
+          "name": "FAIRsharing",
+          "url": "https://fairsharing.org/"
+        },
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "@type": "Dataset",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.15468/q2xdwg"
+        },
+        "name": "antarcticMarineSpeciesSequenceData",
+        "description": "DNA sequence data for Antarctic marine species, mainly invertebrates",
+        "url": "https://doi.org/10.15468/q2xdwg",
+        "sameAs": [
+          "http://obis.org/dataset/4945cc97-c830-42bd-aec0-036f74937b93",
+          "https://ipt.biodiversity.aq/resource?r=rachel_mixed_taxa",
+          "https://www.gbif.org/dataset/7b61ebd6-f762-11e1-a439-00145eb45e9a"
+        ],
+        "includedInDataCatalog": {
+          "@type": "DataCatalog",
+          "name": "Dataset Search",
+          "url": "https://datasetsearch.research.google.com/"
+        },
+        "distribution": {
+          "@type": "DataDownload",
+          "name": "rachel_mixed_taxa",
+          "encodingFormat": "DwC-A",
+          "contentUrl": "https://ipt.biodiversity.aq/archive.do?r=rachel_mixed_taxa&v=2.3"
+        },
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ]
+  }
+}

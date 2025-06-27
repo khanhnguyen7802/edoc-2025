@@ -1,0 +1,63 @@
+{
+    "$id": "https://example.com/schemas/domainDatasets.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "required": ["@context", "@type", "name", "itemListElement"],
+    "properties": {
+        "@context": {
+          "type": "string",
+          "const": "https://schema.org"
+        },
+        "@type": { "type": "string", "const": "ItemList" },
+        "name": { "type": "string", "const": "datasets" },
+        "numberOfItems": { "type": "integer" },
+        "itemListElement": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Dataset"
+          }
+        }
+    },
+    "$defs": {
+        "Dataset": {
+          "type": "object",
+          "required": ["@type", "identifier", "url", "includedInDataCatalog"],
+          "additionalProperties": false,
+          "properties": {
+            "@type": { "type": "string", "const": "Dataset" },
+            "identifier": {
+              "type": "object",
+              "required": ["@type", "propertyID", "value"],
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "pattern": "^10\\.[0-9]{4,}/\\S+$"
+                }
+              }
+            },
+            "name": { "type": "string" },
+            "description": { "type": "string" },
+            "version": {
+              "type": "string",
+              "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "sameAs": { "type": ["string", "array"] },
+            "includedInDataCatalog": {
+              "type": "object",
+              "properties": {
+                "url": { "type": "string", "format": "uri" }
+              },
+              "required": ["@type", "name", "url"]
+            },
+            "license": { "type": "string" },
+            "distribution": {
+              "type": "object",
+              "required": ["@type", "encodingFormat", "contentUrl"]
+            }
+          }
+        }
+    }
+}    		
